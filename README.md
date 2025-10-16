@@ -1,49 +1,45 @@
+# nayaab-collection
 
-# 🌸 Nayaab Collection Website — Simple Guide
+This repository is a single-page, GitHub Pages-ready static site for **Nayaab Collection** — a boutique e-commerce front-end (UI-only).
 
-This folder has your **Nayaab Collection** website.  
-You can upload it to **GitHub Pages** to make your website live for free.
+## What's included
+- `index.html` — Single page layout (Home, About, Products, Contact).
+- `styles.css` — Styling with a purple & gold gradient, responsive layout.
+- `script.js` — Product data, Add-to-Cart UI (client-side only), and interactions.
+- `logo.jpg` — Brand logo.
+- `products/` — Product images (including your uploaded ring image).
 
----
-
-## 🪄 Steps to Upload Your Website
-
-### 1. Create a GitHub Account
-Go to [https://github.com](https://github.com) and sign up or log in.
-
-### 2. Create a New Repository
-- Click the **New Repository** button.  
-- Name it something like `nayaab-collection`.  
-- Keep it **Public**.  
-- Click **Create repository**.
-
-### 3. Upload Your Website Files
-- On your new repo page, click **Upload files**.  
-- Upload **all files and folders** from this ZIP (not the ZIP itself).  
-- Click **Commit changes** to save them.
-
-### 4. Publish with GitHub Pages
-- Go to **Settings → Pages**.  
-- Under **Source**, choose **Deploy from a branch**.  
-- Select **main** branch and **/ (root)** folder.  
-- Click **Save**.
-
-After a few minutes, your site will appear at:  
-👉 `https://your-username.github.io/nayaab-collection/`
+## Example products
+- Elegant Silver Ring — 35 KWD (products/20241006_122816.jpg)
+- Handcrafted Necklace — 45 KWD (products/necklace.jpg)
+- Luxury Shawl — 75 KWD (products/shawl.jpg)
+- Statement Earrings — 30 KWD (products/earrings.jpg)
 
 ---
 
-## 💎 Updating Your Website
-- Replace images inside the folder: `assets/images/products/`  
-- Edit text in `index.html`, `products.html`, `about.html`, or `contact.html` using any text editor.  
-- Re-upload to GitHub to update your live site.
+## Deploy to GitHub Pages
+
+1. Create a new repository on GitHub named **`nayaab-collection`** (or any name you prefer).
+2. On your computer, unzip this project folder, then in a terminal run:
+```bash
+git init
+git add .
+git commit -m "Initial commit - Nayaab Collection single-page site"
+git branch -M main
+git remote add origin https://github.com/YOUR_GITHUB_USERNAME/nayaab-collection.git
+git push -u origin main
+```
+3. In the GitHub repository page, go to **Settings → Pages** (or **Pages** in the sidebar):
+   - For **Source**, choose the `main` branch and the root folder (`/`), then save.
+   - GitHub Pages will provide a URL like `https://YOUR_GITHUB_USERNAME.github.io/nayaab-collection/` within a minute or two.
+4. Open the provided URL to view your live site.
+
+## Notes & next steps
+- This site is a **static front-end** demo. To make it a full e-commerce store you can:
+  - Integrate a hosted cart solution (Snipcart, Shopify Buy Button).
+  - Add a backend with a shopping cart & payments (Stripe, PayPal).
+  - Replace placeholder product images with high-resolution photos in `products/`.
+- Need help connecting payments or deploying? Reply and I’ll walk you through it or do it for you.
 
 ---
-
-## 🖼️ Notes
-- Two real product images are already added:
-  - Mirror Silver Jhumka Earrings  
-  - Antique Drop Mirror Earrings
-- You can add more by copying the existing `<article class="card">...</article>` blocks in **products.html**.
-
-Enjoy your elegant website! 💫  
+Made for Nayaab Collection — good luck! 💜

@@ -3,71 +3,79 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Nayaab Collection — Elegant Luxury</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Nayaab Collection</title>
+  <meta name="description" content="Nayaab Collection - Luxury handcrafted pieces. Shop elegant jewelry, shawls, and more.">
+  <link rel="icon" href="logo.jpg" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="header">
-    <div class="brand">Nayaab Collection</div>
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="products.html">Products</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="logo-link"><img src="logo.jpg" alt="Nayaab Collection" class="logo"></a>
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <section class="hero">
-    <div class="left">
-      <h1>Luxury handcrafted pieces — modern silhouettes</h1>
-      <p>Discover limited-run pieces curated for elegance and comfort. Sustainably sourced materials, artisan details, and a refined color palette.</p>
-      <a class="cta" href="products.html">Explore Collection</a>
-    </div>
-    <div class="right">
-      <div class="product-hero">
-        <div class="badge">New Season</div>
-        <h3>Signature Handcrafted Bag</h3>
-        <p style="color:var(--muted)">Iconic design, handcrafted in small batches.</p>
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-inner container">
+        <div class="hero-text">
+          <h1>Nayaab Collection</h1>
+          <p class="subtitle">Luxury handcrafted pieces — curated just for you.</p>
+          <a class="btn primary" href="#products">Shop Now</a>
+        </div>
+        <div class="hero-image">
+          <img src="logo.jpg" alt="Nayaab logo">
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section style="padding: 24px 6%;">
-    <h2 style="margin-top:0;">Featured</h2>
-    <div class="gallery">
+    <section id="about" class="section about container">
+      <h2>About Us</h2>
+      <p>Nayaab Collection brings a blend of tradition and modern elegance to every handcrafted piece. We curate exclusive designs with attention to detail and premium materials.</p>
+    </section>
 
-<article class="card">
-  <img src="assets/images/products/mirror_silver_jhumka.jpg" alt="Mirror Silver Jhumka Earrings">
-  <h3>Mirror Silver Jhumka Earrings</h3>
-  <p>Traditional handcrafted mirror earrings with intricate silver detailing.</p>
-</article>
-<article class="card">
-  <img src="assets/images/products/antique_drop_mirror.jpg" alt="Antique Drop Mirror Earrings">
-  <h3>Antique Drop Mirror Earrings</h3>
-  <p>Classic teardrop design with a modern silver finish.</p>
-</article>
+    <section id="products" class="section products container">
+      <h2>Our Products</h2>
+      <div class="products-grid" id="productsGrid">
+        <!-- Product cards will be injected by script.js -->
+      </div>
+    </section>
 
-</div>
-  </section>
+    <section id="contact" class="section contact container">
+      <h2>Contact</h2>
+      <p>WhatsApp: <a href="https://wa.me/0096566969563" target="_blank">+965 6696 9563</a></p>
+      <p>Instagram: <a href="https://www.instagram.com/nay.aabcollections" target="_blank">@nay.aabcollections</a></p>
+      <p>Facebook: <a href="https://www.facebook.com/nay.aabcollections" target="_blank">nay.aabcollections</a></p>
+      <form id="contactForm" class="contact-form" onsubmit="event.preventDefault(); alert('Thanks! We will contact you soon.');">
+        <input placeholder="Your name" required />
+        <input placeholder="Email" type="email" required />
+        <textarea placeholder="Message" rows="4" required></textarea>
+        <button class="btn">Send</button>
+      </form>
+    </section>
+  </main>
 
-  <footer class="footer">
-    <div>© Nayaab Collection — Timeless luxury</div>
-    <div>Follow us on Instagram</div>
+  <footer class="site-footer container">
+    <p>© 2025 Nayaab Collection — All rights reserved.</p>
+    <div class="cart-info">Cart: <span id="cartCount">0</span> items</div>
   </footer>
 
-  <div id="productModal" style="display:none; position:fixed; inset:0; align-items:center; justify-content:center; background:rgba(0,0,0,0.6); z-index:40;">
-    <div style="background:white; padding:18px; border-radius:10px; max-width:900px; width:90%; display:flex; gap:18px; align-items:center;">
-      <img src="" alt="" style="width:48%; height:auto; object-fit:cover; border-radius:8px;">
-      <div style="flex:1;">
-        <button id="modalClose" style="float:right; background:none; border:none; font-size:18px; cursor:pointer;">✕</button>
-        <h2 style="margin-top:6px;">Product title</h2>
-        <p style="color:#666;">Product description</p>
-        <p style="font-weight:700; margin-top:12px;">$199</p>
-      </div>
-    </div>
+  <!-- Floating social icons -->
+  <div class="floating-social" aria-hidden="false">
+    <a class="social whatsapp" href="https://wa.me/0096566969563" title="WhatsApp" target="_blank" rel="noopener">WA</a>
+    <a class="social instagram" href="https://www.instagram.com/nay.aabcollections" title="Instagram" target="_blank" rel="noopener">IG</a>
+    <a class="social facebook" href="https://www.facebook.com/nay.aabcollections" title="Facebook" target="_blank" rel="noopener">FB</a>
   </div>
 
-  <script src="assets/js/main.js"></script>
+  <div id="toast" class="toast">Added to cart</div>
+
+  <script src="script.js"></script>
 </body>
 </html>
